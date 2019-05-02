@@ -43,8 +43,6 @@ class FragmentImageGrid : Fragment() {
         viewManager = GridLayoutManager(this.context,context!!.resources.getInteger(R.integer.grid_column_count))
         viewAdapter = context?.let { ImageGridAdapter(it, fileList) }!!
 
-//        var imagegrid_recycler : RecyclerView = view.findViewById(R.id.imagegrid_recycler)
-
         imagegrid_recycler.apply {
             setHasFixedSize(true)
             layoutManager = viewManager
