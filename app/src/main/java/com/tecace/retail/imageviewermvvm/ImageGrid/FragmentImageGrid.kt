@@ -3,13 +3,12 @@ package com.tecace.retail.imageviewermvvm.ImageGrid
 import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+
 import android.util.Log
 import android.view.*
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.tecace.retail.imageviewermvvm.R
-import kotlinx.android.synthetic.main.fragment_image_grid.*
 import java.io.File
 
 class FragmentImageGrid : Fragment() {
@@ -43,6 +42,8 @@ class FragmentImageGrid : Fragment() {
 
         viewManager = GridLayoutManager(this.context,context!!.resources.getInteger(R.integer.grid_column_count))
         viewAdapter = context?.let { ImageGridAdapter(it, fileList) }!!
+
+//        var imagegrid_recycler : RecyclerView = view.findViewById(R.id.imagegrid_recycler)
 
         imagegrid_recycler.apply {
             setHasFixedSize(true)
