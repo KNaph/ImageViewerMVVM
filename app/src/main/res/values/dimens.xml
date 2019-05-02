@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photogrid_spacing">1.2d11p</dimen>
+</resources>
